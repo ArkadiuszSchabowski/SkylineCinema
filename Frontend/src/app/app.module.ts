@@ -12,6 +12,7 @@ import { ComingSoonComponent } from './components/public/coming-soon/coming-soon
 import { TrailersComponent } from './components/public/trailers/trailers.component';
 import { ReservationComponent } from './components/public/reservation/reservation.component';
 import { BookedComponent } from './components/login/booked/booked.component';
+import { CinemaHomeComponent } from './components/public/cinema-home/cinema-home.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { BookedComponent } from './components/login/booked/booked.component';
     ComingSoonComponent,
     TrailersComponent,
     ReservationComponent,
-    BookedComponent
+    BookedComponent,
+    CinemaHomeComponent
   ],
   imports: [
     BrowserModule,
