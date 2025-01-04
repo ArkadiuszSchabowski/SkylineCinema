@@ -3,10 +3,30 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './components/_shared/navbar/navbar.component';
+import { HomeComponent } from './components/public/home/home.component';
+import { CinemaHomeComponent } from './components/public/cinema-home/cinema-home.component';
+import { NowPlayingComponent } from './components/public/now-playing/now-playing.component';
+import { PriceListComponent } from './components/public/price-list/price-list.component';
+import { ContactComponent } from './components/public/contact/contact.component';
+import { ComingSoonComponent } from './components/public/coming-soon/coming-soon.component';
+import { TrailersComponent } from './components/public/trailers/trailers.component';
+import { ReservationComponent } from './components/public/reservation/reservation.component';
+import { BookedComponent } from './components/login/booked/booked.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
+    HomeComponent,
+    CinemaHomeComponent,
+    NowPlayingComponent,
+    PriceListComponent,
+    ContactComponent,
+    ComingSoonComponent,
+    TrailersComponent,
+    ReservationComponent,
+    BookedComponent
   ],
   imports: [
     BrowserModule,
