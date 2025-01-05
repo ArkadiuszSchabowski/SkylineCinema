@@ -13,6 +13,7 @@ import { TrailersComponent } from './components/public/trailers/trailers.compone
 import { ReservationComponent } from './components/public/reservation/reservation.component';
 import { BookedComponent } from './components/login/booked/booked.component';
 import { CinemaHomeComponent } from './components/public/cinema-home/cinema-home.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { CinemaHomeComponent } from './components/public/cinema-home/cinema-home
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
