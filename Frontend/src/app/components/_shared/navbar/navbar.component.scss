@@ -11,33 +11,39 @@ button {
   width: 100%;
   height: 100%;
 }
+#navbar-auth-container{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 70%;
+}
 #navbar-tabs-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 30%;
   background-color: mat.get-color-from-palette(theme.$primary, 700);
 }
 
 #navbar-auth {
   display: flex;
   flex-direction: row;
-  width: 90%;
+  width: calc(100% - 40px);
   height: 70%;
   background-color: black;
   padding-left: 20px;
+  padding-right: 20px;
 }
 #navbar-auth-div {
   display: flex;
   justify-content: right;
   align-items: center;
-  width: 80%;
+  width: 100%;
   height: 100%;
 }
 #navbar-logo-div {
   display: flex;
-  width: 40%;
   height: 100%;
 }
 #navbar-tabs {
@@ -52,6 +58,7 @@ button {
   display: none;
   width: 100%;
   height: 90%;
+  margin: 20px;
   font-size: 16px;
   font-weight: normal;
   border: none;
@@ -76,6 +83,7 @@ button {
   color: mat.get-color-from-palette(theme.$accent, 50);
 }
 .navbar-auth-icon {
+  justify-content: right;
   color: mat.get-color-from-palette(theme.$accent, 50);
 }
 
@@ -88,6 +96,13 @@ button {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  #navbar-container{
+    justify-content: center;
+    align-items: center;
+  }
+  #navbar-auth-container{
+    width: 80%;
+  }
   #navbar-tabs-container {
     justify-content: center;
   }
@@ -95,6 +110,9 @@ button {
     width: 100%;
     padding: 10px;
     margin-left: 0;
+  }
+  #navbar-logo-div {
+    width: 30%;
   }
   .navbar-menu {
     display: none;
@@ -107,11 +125,21 @@ button {
   }
 }
 @media screen and (min-width: 1200px) {
+  #navbar-container{
+    justify-content: center;
+    align-items: center;
+  }
+  #navbar-auth-container{
+    width: 60%;
+  }
   #navbar-tabs-container {
     justify-content: center;
   }
   #navbar-tabs {
     margin-left: 0;
+  }
+  #navbar-logo-div {
+    width: 30%;
   }
   .navbar-menu {
     display: none;

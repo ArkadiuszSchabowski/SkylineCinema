@@ -1,22 +1,32 @@
 <div id="navbar-container">
-  <div id="navbar-auth">
-    <div id="navbar-logo-div">
-      <img src="../../../../assets/logo-navbar.png" />
-    </div>
-    <div id="navbar-auth-div">
-      <button
-        mat-icon-button
-        [matMenuTriggerFor]="authMenu"
-        class="navbar-menu"
-      >
-        <mat-icon class="navbar-auth-icon">person</mat-icon>
-      </button>
-      <mat-menu #authMenu="matMenu">
-        <button mat-menu-item class="navbar-menu-item" routerLink="/login">LOGOWANIE</button>
-        <button mat-menu-item class="navbar-menu-item" routerLink="/register">REJESTRACJA</button>
-      </mat-menu>
-      <button class="navbar-auth-button" routerLink="/login">LOGOWANIE</button>
-      <button class="navbar-auth-button" routerLink="/register">REJESTRACJA</button>
+  <div id="navbar-auth-container">
+    <div id="navbar-auth">
+      <div id="navbar-logo-div">
+        <img src="../../../../assets/logo-navbar.png" />
+      </div>
+      <div id="navbar-auth-div">
+        <button
+          mat-icon-button
+          [matMenuTriggerFor]="authMenu"
+          class="navbar-menu"
+        >
+          <mat-icon class="navbar-auth-icon">person</mat-icon>
+        </button>
+        <mat-menu #authMenu="matMenu">
+          <button mat-menu-item class="navbar-menu-item" routerLink="/login">
+            LOGOWANIE
+          </button>
+          <button mat-menu-item class="navbar-menu-item" routerLink="/register">
+            REJESTRACJA
+          </button>
+        </mat-menu>
+        <button class="navbar-auth-button" routerLink="/login">
+          LOGOWANIE
+        </button>
+        <button class="navbar-auth-button" routerLink="/register">
+          REJESTRACJA
+        </button>
+      </div>
     </div>
   </div>
   <div id="navbar-tabs-container">
@@ -30,19 +40,53 @@
       </button>
       <mat-menu #navbarMenu="matMenu">
         <button mat-menu-item class="navbar-menu-item">AKTUALNOŚCI</button>
-        <button mat-menu-item class="navbar-menu-item" routerLink="/reservation">REZERWACJA</button>
-        <button mat-menu-item class="navbar-menu-item" routerLink="/now-playing">AKTUALNIE</button>
-        <button mat-menu-item class="navbar-menu-item" routerLink="/trailers">TRAILERY</button>
-        <button mat-menu-item class="navbar-menu-item" routerLink="/coming-soon">WKRÓTCE</button>
-        <button mat-menu-item class="navbar-menu-item" routerLink="/price-list">CENNIK</button>
-        <button mat-menu-item class="navbar-menu-item" routerLink="/contact">KONTAKT</button>
+        <button
+          mat-menu-item
+          class="navbar-menu-item"
+          routerLink="/reservation"
+        >
+          REZERWACJA
+        </button>
+        <button
+          mat-menu-item
+          class="navbar-menu-item"
+          routerLink="/now-playing"
+        >
+          AKTUALNIE
+        </button>
+        <button mat-menu-item class="navbar-menu-item" routerLink="/trailers">
+          TRAILERY
+        </button>
+        <button
+          mat-menu-item
+          class="navbar-menu-item"
+          routerLink="/coming-soon"
+        >
+          WKRÓTCE
+        </button>
+        <button mat-menu-item class="navbar-menu-item" routerLink="/price-list">
+          CENNIK
+        </button>
+        <button mat-menu-item class="navbar-menu-item" routerLink="/contact">
+          KONTAKT
+        </button>
       </mat-menu>
       <button class="navbar-tab-button border-right">AKTUALNOŚCI</button>
-      <button class="navbar-tab-button border-right" routerLink="/reservation">REZERWACJA</button>
-      <button class="navbar-tab-button border-right" routerLink="/now-playing">AKTUALNIE</button>
-      <button class="navbar-tab-button border-right" routerLink="/trailers">TRAILERY</button>
-      <button class="navbar-tab-button border-right" routerLink="/coming-soon">WKRÓTCE</button>
-      <button class="navbar-tab-button border-right" routerLink="/price-list">CENNIK</button>
+      <button class="navbar-tab-button border-right" routerLink="/reservation">
+        REZERWACJA
+      </button>
+      <button class="navbar-tab-button border-right" routerLink="/now-playing">
+        AKTUALNIE
+      </button>
+      <button class="navbar-tab-button border-right" routerLink="/trailers">
+        TRAILERY
+      </button>
+      <button class="navbar-tab-button border-right" routerLink="/coming-soon">
+        WKRÓTCE
+      </button>
+      <button class="navbar-tab-button border-right" routerLink="/price-list">
+        CENNIK
+      </button>
       <button class="navbar-tab-button" routerLink="/contact">KONTAKT</button>
     </div>
   </div>
