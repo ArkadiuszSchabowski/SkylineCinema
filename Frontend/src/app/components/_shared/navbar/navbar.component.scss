@@ -1,0 +1,125 @@
+@use "@angular/material" as mat;
+@use "src/styles" as theme;
+
+button {
+  font-size: 14px;
+  font-weight: bold;
+}
+#navbar-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+#navbar-tabs-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: mat.get-color-from-palette(theme.$primary, 700);
+}
+
+#navbar-auth {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 70%;
+  background-color: black;
+  padding-left: 20px;
+}
+#navbar-auth-div {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+}
+#navbar-logo-div {
+  display: flex;
+  width: 40%;
+  height: 100%;
+}
+#navbar-tabs {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+  margin-left: 20px;
+}
+.navbar-auth-button {
+  display: none;
+  width: 100%;
+  height: 90%;
+  font-size: 16px;
+  font-weight: normal;
+  border: none;
+  color: mat.get-color-from-palette(theme.$accent, 50);
+  background-color: black;
+}
+.navbar-auth-button:hover {
+  text-decoration: underline;
+}
+
+.navbar-tab-button {
+  display: none;
+  width: 100%;
+  height: 80%;
+  border: none;
+  background-color: mat.get-color-from-palette(theme.$primary, 700);
+}
+.border-right{
+  border-right: 1px solid black;
+}
+.navbar-tab-button:hover {
+  color: mat.get-color-from-palette(theme.$accent, 50);
+}
+.navbar-auth-icon {
+  color: mat.get-color-from-palette(theme.$accent, 50);
+}
+
+::ng-deep .mat-mdc-menu-content {
+  background-color: mat.get-color-from-palette(theme.$primary, 700);
+}
+
+::ng-deep .mat-mdc-menu-item:hover {
+  color: mat.get-color-from-palette(theme.$accent, 50);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  #navbar-tabs-container {
+    justify-content: center;
+  }
+  #navbar-tabs {
+    width: 100%;
+    padding: 10px;
+    margin-left: 0;
+  }
+  .navbar-menu {
+    display: none;
+  }
+  .navbar-tab-button {
+    display: block;
+  }
+  .navbar-auth-button {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #navbar-tabs-container {
+    justify-content: center;
+  }
+  #navbar-tabs {
+    margin-left: 0;
+  }
+  .navbar-menu {
+    display: none;
+  }
+  .navbar-tab-button {
+    display: block;
+  }
+  .navbar-auth-button {
+    display: block;
+  }
+}
