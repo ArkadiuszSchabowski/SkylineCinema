@@ -12,7 +12,7 @@ import { CinemaHomeComponent } from './components/public/cinema-home/cinema-home
 const routes: Routes = [
   {path: "", component: HomeComponent},
   {path: ":city", children: [
-    {path: "home", component: CinemaHomeComponent},
+    {path: "", component: CinemaHomeComponent},
     {path: "reservation", component: ReservationComponent},
     {path: "now-playing", component: NowPlayingComponent},
     {path: "trailers", component: TrailersComponent},
