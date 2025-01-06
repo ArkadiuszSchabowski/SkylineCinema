@@ -39,6 +39,7 @@
         <mat-icon>menu</mat-icon>
       </button>
       <mat-menu #navbarMenu="matMenu">
+        <button mat-menu-item class="navbar-menu-item" routerLink="/">WYBÓR KINA</button>
         <button mat-menu-item class="navbar-menu-item" [routerLink]="['/', city]">AKTUALNOŚCI</button>
         <button
           mat-menu-item
@@ -71,6 +72,7 @@
           KONTAKT
         </button>
       </mat-menu>
+      <button class="navbar-tab-button border-right" routerLink="/">WYBÓR KINA</button>
       <button class="navbar-tab-button border-right" [routerLink]="['/', city]">AKTUALNOŚCI</button>
       <button class="navbar-tab-button border-right" [routerLink]="['/', city, 'reservation']">
         REZERWACJA
