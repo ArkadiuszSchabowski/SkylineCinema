@@ -39,55 +39,55 @@
         <mat-icon>menu</mat-icon>
       </button>
       <mat-menu #navbarMenu="matMenu">
-        <button mat-menu-item class="navbar-menu-item">AKTUALNOŚCI</button>
+        <button mat-menu-item class="navbar-menu-item" [routerLink]="['/', city]">AKTUALNOŚCI</button>
         <button
           mat-menu-item
           class="navbar-menu-item"
-          routerLink="/reservation"
+          [routerLink]="['/', city, 'reservation']"
         >
           REZERWACJA
         </button>
         <button
           mat-menu-item
           class="navbar-menu-item"
-          routerLink="/now-playing"
+          [routerLink]="['/', city, 'now-playing']"
         >
           AKTUALNIE
         </button>
-        <button mat-menu-item class="navbar-menu-item" routerLink="/trailers">
+        <button mat-menu-item class="navbar-menu-item" [routerLink]="['/', city, 'trailers']">
           TRAILERY
         </button>
         <button
           mat-menu-item
           class="navbar-menu-item"
-          routerLink="/coming-soon"
+          [routerLink]="['/', city, 'coming-soon']"
         >
           WKRÓTCE
         </button>
-        <button mat-menu-item class="navbar-menu-item" routerLink="/price-list">
+        <button mat-menu-item class="navbar-menu-item" [routerLink]="['/', city, 'price-list']">
           CENNIK
         </button>
-        <button mat-menu-item class="navbar-menu-item" routerLink="/contact">
+        <button mat-menu-item class="navbar-menu-item" [routerLink]="['/', city, 'contact']">
           KONTAKT
         </button>
       </mat-menu>
-      <button class="navbar-tab-button border-right">AKTUALNOŚCI</button>
-      <button class="navbar-tab-button border-right" routerLink="/reservation">
+      <button class="navbar-tab-button border-right" [routerLink]="['/', city]">AKTUALNOŚCI</button>
+      <button class="navbar-tab-button border-right" [routerLink]="['/', city, 'reservation']">
         REZERWACJA
       </button>
-      <button class="navbar-tab-button border-right" routerLink="/now-playing">
+      <button class="navbar-tab-button border-right" [routerLink]="['/', city, 'now-playing']">
         AKTUALNIE
       </button>
-      <button class="navbar-tab-button border-right" routerLink="/trailers">
+      <button class="navbar-tab-button border-right" [routerLink]="['/', city, 'trailers']">
         TRAILERY
       </button>
-      <button class="navbar-tab-button border-right" routerLink="/coming-soon">
+      <button class="navbar-tab-button border-right" [routerLink]="['/', city, 'coming-soon']">
         WKRÓTCE
       </button>
-      <button class="navbar-tab-button border-right" routerLink="/price-list">
+      <button class="navbar-tab-button border-right" [routerLink]="['/', city, 'price-list']">
         CENNIK
       </button>
-      <button class="navbar-tab-button" routerLink="/contact">KONTAKT</button>
+      <button class="navbar-tab-button" [routerLink]="['/', city, 'contact']">KONTAKT</button>
     </div>
   </div>
 </div>
