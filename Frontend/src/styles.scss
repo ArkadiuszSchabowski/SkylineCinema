@@ -16,6 +16,7 @@ $theme: mat.define-light-theme((
 @include mat.all-component-themes($theme);
 
 body { 
+  color: mat.get-color-from-palette($accent, 50);
   background-color: black;
   margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
 }
