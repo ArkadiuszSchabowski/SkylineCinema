@@ -8,9 +8,13 @@ import { ComingSoonComponent } from './components/public/coming-soon/coming-soon
 import { PriceListComponent } from './components/public/price-list/price-list.component';
 import { ContactComponent } from './components/public/contact/contact.component';
 import { CinemaHomeComponent } from './components/public/cinema-home/cinema-home.component';
+import { LoginComponent } from './components/public/login/login.component';
+import { RegisterComponent } from './components/public/register/register.component';
 
 const routes: Routes = [
   {path: "", component: HomeComponent},
+  {path: "login", component: LoginComponent},
+  {path: "register", component: RegisterComponent},
   {path: ":city", children: [
     {path: "", component: CinemaHomeComponent},
     {path: "reservation", component: ReservationComponent},
