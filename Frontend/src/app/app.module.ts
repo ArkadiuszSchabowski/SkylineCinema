@@ -12,13 +12,13 @@ import { ComingSoonComponent } from './components/public/coming-soon/coming-soon
 import { TrailersComponent } from './components/public/trailers/trailers.component';
 import { ReservationComponent } from './components/public/reservation/reservation.component';
 import { BookedComponent } from './components/login/booked/booked.component';
-import { CinemaHomeComponent } from './components/public/cinema-home/cinema-home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
 import { LoginComponent } from './components/public/login/login.component';
 import { RegisterComponent } from './components/public/register/register.component';
+import { NewsComponent } from './components/public/news/news.component';
 
 @NgModule({
   declarations: [
@@ -32,9 +32,9 @@ import { RegisterComponent } from './components/public/register/register.compone
     TrailersComponent,
     ReservationComponent,
     BookedComponent,
-    CinemaHomeComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
