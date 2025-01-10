@@ -7,8 +7,8 @@ import { TrailersComponent } from './components/public/trailers/trailers.compone
 import { ComingSoonComponent } from './components/public/coming-soon/coming-soon.component';
 import { PriceListComponent } from './components/public/price-list/price-list.component';
 import { ContactComponent } from './components/public/contact/contact.component';
-import { LoginComponent } from './components/public/login/login.component';
-import { RegisterComponent } from './components/public/register/register.component';
+import { LoginComponent } from './components/auth/login/login.component';
+import { RegisterComponent } from './components/auth/register/register.component';
 import { NewsComponent } from './components/public/news/news.component';
 
 const routes: Routes = [
