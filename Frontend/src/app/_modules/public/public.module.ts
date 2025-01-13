@@ -8,6 +8,7 @@ import { NewsComponent } from 'src/app/components/public/news/news.component';
 import { PriceListComponent } from 'src/app/components/public/price-list/price-list.component';
 import { ReservationComponent } from 'src/app/components/public/reservation/reservation.component';
 import { TrailersComponent } from 'src/app/components/public/trailers/trailers.component';
+import { AngularMaterialModule } from '../angular-material/angular-material.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { TrailersComponent } from 'src/app/components/public/trailers/trailers.c
         NewsComponent
   ],
   imports: [
-    CommonModule
+    CommonModule, AngularMaterialModule
   ],
   exports: [
         HomeComponent,

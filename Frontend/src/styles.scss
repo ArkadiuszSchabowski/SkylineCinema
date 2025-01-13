@@ -31,17 +31,21 @@ body {
   padding-top: 120px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: silver;
+  background-color: black;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   #component-container{
     flex-direction: row;
+    min-height: calc(100vh - 160px);
+    padding-top: 140px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   #component-container{
     flex-direction: row;
+    min-height: calc(100vh - 160px);
+    padding-top: 140px;
   }
 }
