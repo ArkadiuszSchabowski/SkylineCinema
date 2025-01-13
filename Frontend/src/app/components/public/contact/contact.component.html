@@ -1,3 +1,24 @@
 <div id="component-container">
-<p>contact works</p>
+<div id="component-container-left">
+    <div id="contact-photo"></div>
+</div>
+<div id="component-container-right">
+    <form>
+        <mat-card>
+            <label class="form-label">Formularz kontaktowy</label>
+            <mat-card-content>
+                    <mat-form-field>
+                        <mat-label>Twój e-mail</mat-label>
+                        <input matInput>
+                      </mat-form-field>
+                      <mat-form-field>
+                        <mat-label>Imię</mat-label>
+                        <input matInput>
+                      </mat-form-field>
+                      <textarea placeholder="Treść wiadomości"></textarea>
+                      <button mat-raised-button>Wyślij</button>
+            </mat-card-content>
+        </mat-card>
+    </form>
+</div>
 </div>
