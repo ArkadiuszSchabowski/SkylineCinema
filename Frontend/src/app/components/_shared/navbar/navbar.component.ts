@@ -16,7 +16,7 @@ export class NavbarComponent {
     this.cityService.city$.subscribe(city => {
       this.city = city;
       if (this.city) {
-        this.router.navigate([`/${this.city}`]);
+        // this.router.navigate([`/${this.city}`]);
       }
     })
   }
