@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
+import { LoginDto } from 'src/app/_models/login-dto';
+import { LoginErrorDto } from 'src/app/_models/login-error-dto';
 
 @Component({
   selector: 'app-login',
@@ -7,15 +9,11 @@ import { ToastrService } from 'ngx-toastr';
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent {
-  model = {
-    email: '',
-    password: ''
-  };
+
+  model: LoginDto = new LoginDto();
+  errors: LoginErrorDto = new LoginErrorDto();
+
   isPasswordVisible = true;
-  errors = {
-    email: '',
-    password: ''
-  };
 
   constructor(private toastr: ToastrService) {}
 
