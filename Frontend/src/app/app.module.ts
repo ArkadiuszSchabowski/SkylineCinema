@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AngularMaterialModule } from './_modules/angular-material/angular-material.module';
 import { PublicModule } from './_modules/public/public.module';
 import { AuthModule } from './_modules/auth/auth.module';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { AuthModule } from './_modules/auth/auth.module';
     AngularMaterialModule,
     AuthModule,
     PublicModule,
+    ToastrModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

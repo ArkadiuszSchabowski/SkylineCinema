@@ -9,6 +9,7 @@ import { PriceListComponent } from 'src/app/components/public/price-list/price-l
 import { ReservationComponent } from 'src/app/components/public/reservation/reservation.component';
 import { TrailersComponent } from 'src/app/components/public/trailers/trailers.component';
 import { AngularMaterialModule } from '../angular-material/angular-material.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { AngularMaterialModule } from '../angular-material/angular-material.modu
         NewsComponent
   ],
   imports: [
-    CommonModule, AngularMaterialModule
+    CommonModule, AngularMaterialModule, FormsModule
   ],
   exports: [
         HomeComponent,

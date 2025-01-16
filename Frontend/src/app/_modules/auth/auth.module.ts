@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { BookedComponent } from 'src/app/components/auth/booked/booked.component';
 import { LoginComponent } from 'src/app/components/auth/login/login.component';
 import { RegisterComponent } from 'src/app/components/auth/register/register.component';
+import { AngularMaterialModule } from '../angular-material/angular-material.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -11,7 +13,7 @@ import { RegisterComponent } from 'src/app/components/auth/register/register.com
         RegisterComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule, AngularMaterialModule, FormsModule
   ],
   exports: [
         BookedComponent,
