@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
 import { LoginDto } from 'src/app/_models/login-dto';
 import { LoginErrorDto } from 'src/app/_models/login-error-dto';
@@ -21,13 +22,13 @@ export class LoginComponent {
     this.isPasswordVisible = !this.isPasswordVisible;
   }
 
-  tryLogin() {
-    this.errors = { email: '', password: '' };
+  tryLogin(loginForm: NgForm) {
+    this.errors = new LoginErrorDto();
 
     if (!this.model.email) {
       this.errors.email = 'E-mail jest wymagany!';
-    } 
-    else if (!this.isValidEmail(this.model.email)) {
+
+    } else if (!this.isValidEmail(this.model.email)) {
       this.errors.email = 'Niepoprawny format e-maila!';
     }
 
@@ -38,9 +39,12 @@ export class LoginComponent {
     if (this.errors.email || this.errors.password) {
       return;
     }
+    
+    loginForm.resetForm();
 
-    // TO DO
-    // this.toastr.success('Zalogowano pomyślnie!');
+    // TO DO - Implement API authentication and handle response
+
+    this.toastr.success('Zalogowano pomyślnie!');
   }
 
   private isValidEmail(email: string): boolean {
