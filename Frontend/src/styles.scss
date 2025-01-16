@@ -33,6 +33,13 @@ body {
   padding-right: 20px;
   background-color: black;
 }
+mat-form-field{
+  margin-top: 20px;
+}
+
+.mat-mdc-form-field-subscript-wrapper {
+  display: none !important;
+}
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   #component-container{
