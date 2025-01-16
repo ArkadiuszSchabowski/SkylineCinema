@@ -3,7 +3,7 @@
     <div id="login-photo"></div>
   </div>
   <div id="component-container-right">
-    <form #loginForm="ngForm" (ngSubmit)="tryLogin()">
+    <form #loginForm="ngForm" (ngSubmit)="tryLogin(loginForm)">
       <mat-card>
         <label class="form-label">Formularz logowania</label>
         <mat-card-content>
