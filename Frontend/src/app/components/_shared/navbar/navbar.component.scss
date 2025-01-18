@@ -1,6 +1,10 @@
 @use "@angular/material" as mat;
 @use "src/styles" as theme;
 
+mat-icon {
+  color: black;
+}
+
 button {
   font-size: 12px;
   font-weight: bold;
@@ -13,7 +17,7 @@ button {
   background-color: black;
   margin-top: 0;
 }
-#navbar-auth-container{
+#navbar-auth-container {
   display: flex;
   align-items: center;
   width: 100%;
@@ -78,14 +82,14 @@ button {
   border: none;
   background-color: mat.get-color-from-palette(theme.$primary, 700);
 }
-.border-right{
+.border-right {
   border-right: 1px solid black;
-}
-.navbar-tab-button:hover {
-  color: mat.get-color-from-palette(theme.$accent, 50);
 }
 .navbar-auth-icon {
   justify-content: right;
+  color: mat.get-color-from-palette(theme.$accent, 50);
+}
+.navbar-tab-button:hover {
   color: mat.get-color-from-palette(theme.$accent, 50);
 }
 
@@ -96,16 +100,13 @@ button {
 ::ng-deep .mat-mdc-menu-item:hover {
   color: mat.get-color-from-palette(theme.$accent, 50);
 }
-mat-icon{
-  color: black;
-}
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  #navbar-container{
+  #navbar-container {
     justify-content: center;
     align-items: center;
   }
-  #navbar-auth-container{
+  #navbar-auth-container {
     width: 80%;
   }
   #navbar-tabs-container {
@@ -130,11 +131,11 @@ mat-icon{
   }
 }
 @media screen and (min-width: 1200px) {
-  #navbar-container{
+  #navbar-container {
     justify-content: center;
     align-items: center;
   }
-  #navbar-auth-container{
+  #navbar-auth-container {
     width: 60%;
   }
   #navbar-tabs-container {

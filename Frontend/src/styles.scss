@@ -15,6 +15,10 @@ $theme: mat.define-light-theme((
 
 @include mat.all-component-themes($theme);
 
+mat-form-field{
+  margin-top: 20px;
+}
+
 body { 
   color: mat.get-color-from-palette($accent, 50);
   color: white;
@@ -42,10 +46,6 @@ body {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-mat-form-field{
-  margin-top: 20px;
 }
 
 .form-label {
