@@ -52,6 +52,11 @@ mat-card-content {
   align-items: center;
   text-align: center;
 }
+#container-background-photo {
+  width: 90%;
+  height: 90%;
+  background-image: url(../../../../assets/backgrounds/login.png);
+}
 
 .form-label {
   font-size: 20px;
