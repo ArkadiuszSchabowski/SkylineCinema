@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  min-width: 300px;
+  min-width: 400px;
 }
 
 #component-container-left {
@@ -58,10 +58,6 @@ mat-card-content {
   background-image: url(../../../../assets/backgrounds/login.png);
 }
 
-.form-label {
-  font-size: 20px;
-  margin: 10px auto;
-}
 mat-form-field {
   display: flex;
   justify-content: center;
@@ -91,7 +87,7 @@ mat-form-field {
   }
   mat-card {
     border: 4px solid mat.get-color-from-palette(theme.$primary, 700);
-    width: 80%;
+    width: 100%;
   }
   mat-card-content {
     width: 500px;
