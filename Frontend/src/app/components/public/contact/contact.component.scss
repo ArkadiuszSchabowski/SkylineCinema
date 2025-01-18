@@ -81,6 +81,10 @@ button {
   #component-container-left {
     display: flex;
   }
+  #container-background-photo {
+    width: 70%;
+    height: 70%;
+  }
 }
 @media screen and (min-width: 1200px) {
   mat-card {
@@ -94,5 +98,9 @@ button {
   }
   #component-container-left {
     display: flex;
+  }
+  #container-background-photo {
+    width: 50%;
+    height: 50%;
   }
 }
