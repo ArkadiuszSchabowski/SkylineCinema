@@ -2,7 +2,7 @@
 @use "src/styles" as theme;
 
 button {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
 }
 #navbar-container {
@@ -95,6 +95,9 @@ button {
 
 ::ng-deep .mat-mdc-menu-item:hover {
   color: mat.get-color-from-palette(theme.$accent, 50);
+}
+mat-icon{
+  color: black;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
