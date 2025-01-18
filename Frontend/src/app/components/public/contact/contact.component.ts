@@ -25,11 +25,11 @@ export class ContactComponent {
     }
 
     if (!this.model.name || this.model.name.length < 3) {
-      this.errors.name = 'Imię musi zawierać co najmniej 3 znaki';
+      this.errors.name = 'Imię musi zawierać co najmniej 3 znaki!';
     }
 
     if (!this.model.message || this.model.message.length < 25) {
-      this.errors.message = 'Wiadomość musi zawierać co najmniej 25 znaków';
+      this.errors.message = 'Wiadomość musi zawierać co najmniej 25 znaków!';
     }
 
     if (this.errors.email || this.errors.name || this.errors.message) {
