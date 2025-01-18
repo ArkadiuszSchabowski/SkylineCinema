@@ -14,7 +14,7 @@ export class LoginComponent {
   model: LoginDto = new LoginDto();
   errors: LoginErrorDto = new LoginErrorDto();
 
-  isPasswordVisible = true;
+  isPasswordVisible = false;
 
   constructor(private toastr: ToastrService) {}
 

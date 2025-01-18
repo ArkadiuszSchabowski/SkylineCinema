@@ -1,3 +1,80 @@
 <div id="component-container">
-    <p>register works!</p>
+  <div id="component-container-left">
+    <div id="container-background-photo"></div>
   </div>
+  <div id="component-container-right">
+    <form #registerForm="ngForm" (ngSubmit)="tryRegister(registerForm)">
+      <mat-card>
+        <mat-card-content>
+          <label class="form-label">Formularz rejestracji</label>
+          <mat-form-field>
+            <mat-label>Adres e-mail</mat-label>
+            <input
+              matInput
+              name="register"
+              required
+              [(ngModel)]="model.email"
+              autocomplete="off"
+            />
+          </mat-form-field>
+          <div *ngIf="errors.email" class="error-form">
+            {{ errors.email }}
+          </div>
+          <mat-form-field>
+            <mat-label>Hasło</mat-label>
+            <input
+              matInput
+              [type]="!isPasswordVisible ? 'password' : 'text'"
+              [(ngModel)]="model.password"
+              name="password"
+              required
+            />
+            <button
+              mat-icon-button
+              class="button-password"
+              matSuffix
+              (click)="changePasswordVisibility()"
+              [attr.aria-label]="'Ukryj hasło'"
+              [attr.aria-pressed]="!isPasswordVisible"
+            >
+              <mat-icon>{{
+                !isPasswordVisible ? "visibility_off" : "visibility"
+              }}</mat-icon>
+            </button>
+          </mat-form-field>
+          <div *ngIf="errors.password" class="error-form">
+            {{ errors.password }}
+          </div>
+          <mat-form-field>
+            <mat-label>Powtórz hasło</mat-label>
+            <input
+              matInput
+              [type]="!isRepeatPasswordVisible ? 'password' : 'text'"
+              name="repeatPassword"
+              required
+              [(ngModel)]="model.repeatPassword"
+            />
+            <button
+              mat-icon-button
+              class="button-password"
+              matSuffix
+              (click)="changeRepeatPasswordVisibility()"
+              [attr.aria-label]="'Ukryj hasło'"
+              [attr.aria-pressed]="!isRepeatPasswordVisible"
+            >
+              <mat-icon>{{
+                !isRepeatPasswordVisible ? "visibility_off" : "visibility"
+              }}</mat-icon>
+            </button>
+          </mat-form-field>
+          <div *ngIf="errors.repeatPassword" class="error-form">
+            {{ errors.repeatPassword }}
+          </div>
+          <button type="submit" mat-raised-button id="button-submit">
+            Zarejestruj się
+          </button>
+        </mat-card-content>
+      </mat-card>
+    </form>
+  </div>
+</div>

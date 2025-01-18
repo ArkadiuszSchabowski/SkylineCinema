@@ -27,7 +27,7 @@
               [(ngModel)]="model.password"
               required
               autocomplete="off"
-              [type]="isPasswordVisible ? 'password' : 'text'"
+              [type]="!isPasswordVisible ? 'password' : 'text'"
             />
             <button
               id="button-password"
@@ -37,10 +37,10 @@
               matSuffix
               (click)="changePasswordVisibility()"
               [attr.aria-label]="'Hide password'"
-              [attr.aria-pressed]="isPasswordVisible"
+              [attr.aria-pressed]="!isPasswordVisible"
             >
               <mat-icon>{{
-                isPasswordVisible ? "visibility_off" : "visibility"
+                !isPasswordVisible ? "visibility_off" : "visibility"
               }}</mat-icon>
             </button>
           </mat-form-field>
