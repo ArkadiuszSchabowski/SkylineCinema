@@ -70,10 +70,6 @@ button{
     font-weight: bold;
     background-color: mat.get-color-from-palette(theme.$primary, 700) !important;
 }
-.form-label{
-    font-size: 20px;
-    margin: 15px auto;
-}
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   #component-container-left {
