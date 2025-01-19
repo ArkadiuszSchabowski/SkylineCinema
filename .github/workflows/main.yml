@@ -21,3 +21,7 @@ jobs:
         working-directory: ./Frontend
       - run: npx ng build
         working-directory: ./Frontend
+      - run: npx ng test --watch=false --browsers=ChromeHeadless
+        working-directory: ./Frontend
+        env:
+          CI: true
