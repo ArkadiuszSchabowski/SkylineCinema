@@ -1,0 +1,30 @@
+@use "@angular/material" as mat;
+@use "src/styles" as theme;
+
+#component-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-width: 400px;
+  margin-left: 20px;
+}
+
+.carousel-image {
+  width: 500px;
+  min-width: 500px;
+  height: 250px;
+  min-height: 250px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .carousel-image {
+    width: 750px;
+    height: 375px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .carousel-image {
+    width: 900px;
+    height: 450px;
+  }
+}
