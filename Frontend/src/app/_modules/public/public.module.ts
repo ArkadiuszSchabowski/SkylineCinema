@@ -10,6 +10,7 @@ import { ReservationComponent } from 'src/app/components/public/reservation/rese
 import { TrailersComponent } from 'src/app/components/public/trailers/trailers.component';
 import { AngularMaterialModule } from '../angular-material/angular-material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgxBootstrapModule } from '../ngx-bootstrap/ngx-bootstrap.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
         NewsComponent
   ],
   imports: [
-    CommonModule, AngularMaterialModule, FormsModule, ReactiveFormsModule
+    CommonModule, AngularMaterialModule, FormsModule, ReactiveFormsModule, NgxBootstrapModule
   ],
   exports: [
         HomeComponent,
