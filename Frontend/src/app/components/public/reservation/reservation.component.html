@@ -1,3 +1,124 @@
 <div id="component-container">
-    <p>reservation works!</p>
-  </div>
+  <form #contactForm="ngForm">
+    <mat-card>
+      <mat-card-content>
+        <mat-stepper [linear]="isLinear" #stepper orientation="vertical">
+          <mat-step [stepControl]="firstFormGroup">
+            <form [formGroup]="firstFormGroup">
+              <ng-template matStepLabel>Wybór miejsc</ng-template>
+              <div id="container-seat-select">
+                <div id="screen"></div>
+                <div id="row1" class="row">
+                  <button id="seat1" class="seat">1</button>
+                  <button id="seat2" class="seat">2</button>
+                  <button id="seat3" class="seat">3</button>
+                  <button id="seat4" class="seat">4</button>
+                  <button id="seat5" class="seat">5</button>
+                </div>
+                <div id="row2" class="row">
+                  <button id="seat6" class="seat">6</button>
+                  <button id="seat7" class="seat">7</button>
+                  <button id="seat8" class="seat">8</button>
+                  <button id="seat9" class="seat">9</button>
+                  <button id="seat10" class="seat">10</button>
+                  <button id="seat11" class="seat">11</button>
+                </div>
+                <div id="row3" class="row">
+                  <button id="seat12" class="seat">12</button>
+                  <button id="seat13" class="seat">13</button>
+                  <button id="seat14" class="seat">14</button>
+                  <button id="seat15" class="seat">15</button>
+                  <button id="seat16" class="seat">16</button>
+                  <button id="seat17" class="seat">17</button>
+                  <button id="seat18" class="seat">18</button>
+                </div>
+                <div id="row4" class="row">
+                  <button id="seat19" class="seat">19</button>
+                  <button id="seat20" class="seat">20</button>
+                  <button id="seat21" class="seat">21</button>
+                  <button id="seat22" class="seat">22</button>
+                  <button id="seat23" class="seat">23</button>
+                  <button id="seat24" class="seat">24</button>
+                  <button id="seat25" class="seat">25</button>
+                  <button id="seat26" class="seat">26</button>
+                </div>
+                <div id="row5" class="row">
+                  <button id="seat27" class="seat">27</button>
+                  <button id="seat28" class="seat">28</button>
+                  <button id="seat29" class="seat">29</button>
+                  <button id="seat30" class="seat">30</button>
+                  <button id="seat31" class="seat">31</button>
+                  <button id="seat32" class="seat">32</button>
+                  <button id="seat33" class="seat">33</button>
+                  <button id="seat34" class="seat">34</button>
+                  <button id="seat35" class="seat">35</button>
+                </div>
+                <div id="seat-info">
+                  <div id="legend-seat-available">
+                  <button class="seat"></button>Dostępne miejsca
+                  </div>
+                  <div id="legend-seat-selected">
+                  <button class="seat seat-selected"></button>Wybrane miejsca
+                  </div>
+                  <div id="legend-seat-taken">
+                  <button class="seat seat-taken"></button>Niedostępne miejsca
+                  </div>
+                </div>
+              </div>
+              <div>
+                <button mat-button matStepperNext class="button-stepper">
+                  Dalej
+                </button>
+              </div>
+            </form>
+          </mat-step>
+          <mat-step [stepControl]="secondFormGroup">
+            <form [formGroup]="secondFormGroup">
+              <ng-template matStepLabel>Wybór biletów</ng-template>
+              <mat-form-field>
+                <mat-label>Rodzaj biletu</mat-label>
+                <mat-select [(value)]="selectedTicket">
+                  <mat-option
+                    *ngFor="let ticket of tickets"
+                    [value]="ticket"
+                  >
+                    {{ ticket.name }}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+              <div>
+                <button mat-button matStepperPrevious class="button-stepper">
+                  Wstecz
+                </button>
+                <button mat-button matStepperNext class="button-stepper">
+                  Dalej
+                </button>
+              </div>
+            </form>
+          </mat-step>
+            <mat-step [stepControl]="thirdFormGroup">
+              <form [formGroup]="thirdFormGroup">
+            <ng-template matStepLabel>Potwierdzenie rezerwacji</ng-template>
+            <p class="p">Kino: </p>
+            <p class="p">Film: </p>
+            <p class="p">Godzina: </p>
+            <p class="p">Ilość biletów: </p>
+            <p class="p">Miejsca: </p>
+            <div>
+              <button mat-button matStepperNext class="button-stepper">
+                Potwierdzam
+              </button>
+            </div>
+              </form>
+          </mat-step>
+          <mat-step>
+            <ng-template matStepLabel>Informacje o zamówieniu</ng-template>
+            <p class="p">Dziękujemy za skorzystanie z naszych usług!</p>
+          <p class="p">Na Twój e-mail wysłaliśmy potwierdzenie zamówienia!</p>
+          <p class="p">Miłego seansu!</p>
+          </mat-step>
+        </mat-stepper>
+      </mat-card-content>
+    </mat-card>
+  </form>
+</div>
