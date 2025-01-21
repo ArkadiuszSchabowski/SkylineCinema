@@ -10,6 +10,7 @@ import { AngularMaterialModule } from './_modules/angular-material/angular-mater
 import { PublicModule } from './_modules/public/public.module';
 import { AuthModule } from './_modules/auth/auth.module';
 import { ToastrModule } from 'ngx-toastr';
+import { NgxBootstrapModule } from './_modules/ngx-bootstrap/ngx-bootstrap.module';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ToastrModule } from 'ngx-toastr';
     AppRoutingModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
+    NgxBootstrapModule,
     AuthModule,
     PublicModule,
     ToastrModule.forRoot(),
