@@ -1,3 +1,42 @@
 <div id="component-container">
-    <p>now-playing works!</p>
+  <div id="title">
+    Repertuar Skyline Cinema:
+    <span *ngIf="city == 'katowice'">Katowice ul. Długa 67</span>
+    <span *ngIf="city == 'gliwice'">Gliwice ul. Słoneczna 12</span>
   </div>
+  <div id="container-calendar-cinema">
+    <div id="calendar">
+      <mat-form-field>
+        <mat-label>Wybierz datę</mat-label>
+        <input matInput [matDatepicker]="picker" [min]="minDate" />
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle
+          matIconSuffix
+          [for]="picker"
+        ></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </div>
+  </div>
+  <div id="movie-table">
+    <div id="poster-trailer-table">
+      <div id="container-poster">
+        <img src="assets/posters/babygirl.png" />
+      </div>
+      <div id="trailer"></div>
+    </div>
+    <div id="details-table">
+      <!-- <div id="title" *ngFor="let movie of movies"> -->
+      <!-- {{ movie.title }} -->
+      <!-- </div> -->
+      <div id="movie-title">Tytuł</div>
+      <div id="genre">Dramat</div>
+      <div id="duration-time">100 min</div>
+      <div id="container-reservation">
+        <button class="reservation-button" mat-raised-button>13:30</button
+        ><button class="reservation-button" mat-raised-button>15:30</button
+        ><button class="reservation-button" mat-raised-button>18:30</button>
+      </div>
+    </div>
+  </div>
+</div>
